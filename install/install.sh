@@ -10,3 +10,4 @@ tar -xzf kweb-1.6.4.tar.gz
 cd kweb-1.6.4
 ./debinstall
 cd ..
+echo export DISPLAY=:0.0 >> /home/pi/.profile
