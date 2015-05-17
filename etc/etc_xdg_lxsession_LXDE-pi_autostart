@@ -1,0 +1,19 @@
+@lxpanel --profile LXDE
+@pcmanfm --desktop --profile LXDE
+@xscreensaver -no-splash
+
+### added by dels
+
+@xset s off
+@xset -dpms
+@xset s noblank
+
+@sed -i 's/"exited_cleanly": false/"exited_cleanly": true/' ~/.config/chromium/Default/Preferences
+
+## choose which browser
+@/home/pi/bin/kweb_start
+#@/home/pi/bin/chromium_start
+#@/home/pi/bin/epiphany_start
+
+#remove the mouse pointer
+@unclutter

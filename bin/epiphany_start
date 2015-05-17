@@ -1,0 +1,5 @@
+epiphany-browser http://dashingdemo.herokuapp.com/sampletv &
+sleep 10
+xdotool search --class epiphany-browser windowactivate
+xdotool key F11
+

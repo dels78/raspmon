@@ -1,0 +1,17 @@
+#!/bin/bash
+: ${1?"Usage: $0 ARGUMENT"}
+
+if [[ $1 == "epiphany" || $1 == "chromium" || $1 == "kweb" ]]
+then
+    if [[ $(pgrep $1) ]]
+    then
+        echo "$1 is running";
+    else
+        echo "Not Running, so I must do something";
+        # DO something ....
+    fi
+else
+    echo 'Usage: checkbrowser [epiphany | chromium | kweb]'
+    echo 'Invalid name entered, please enter one of the three above'
+    exit 0
+fi
